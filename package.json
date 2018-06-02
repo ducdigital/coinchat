@@ -17,7 +17,8 @@
     "react": "^16.4.0",
     "react-apollo": "^2.1.4",
     "react-dom": "^16.4.0",
-    "react_ujs": "^2.4.4"
+    "react_ujs": "^2.4.4",
+    "subscriptions-transport-ws": "^0.9.9"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"

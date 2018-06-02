@@ -70,7 +70,6 @@ class ChatBox extends React.Component {
 }
 
 ChatBox.getDerivedStateFromProps = (nextProps, prevState) => {
-  console.log(nextProps);
   let newState = {}
   if (!prevState.messages || (
     Array.isArray(prevState.messages) &&
@@ -84,7 +83,6 @@ ChatBox.getDerivedStateFromProps = (nextProps, prevState) => {
       .concat([nextProps.newMessage]);
   }
 
-  console.log(newState);
   if (_isEmpty(newState)) {
     return null;
   }
