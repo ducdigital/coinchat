@@ -25,7 +25,11 @@ class ChatBoxInput extends React.Component {
   }
 
   submit() {
-    this.props.onSubmit(this.state.inputText);
+    const text = this.state.inputText;
+    this.props.onSubmit(text);
+    this.setState({
+      inputText: '',
+    });
   }
 
   render () {
